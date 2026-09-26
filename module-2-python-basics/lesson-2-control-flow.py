@@ -7,16 +7,16 @@ Date: [date]
 WHAT IS THIS TOPIC? (explain it like you're
 teaching a friend who's never coded before)
 ============================================
-[write your own explanation here]
+[Control flow is how program decides what to do. we can use if,felif, and else to make conditons or how program choose different actions]
 
 
 ============================================
 KEY VOCABULARY
 ============================================
 - condition:
-- if / elif / else:
-- comparison operator:
-- boolean expression:
+- if / elif / else: this is use for making conditions for the program
+- comparison operator: symbols for comparing (<,>,==)
+- boolean expression: use for true or false
 (add more as needed)
 
 
@@ -28,14 +28,22 @@ came up with yourself — not copied from class.
 """
 
 # --- your code example goes here ---
+temperature = 30
+
+if temperature > 35:
+    print("It is hot.")
+elif temperature >= 25:
+    print("It is warm.")
+else:
+    print("It is cold.")
+
 
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what's something confusing or easy to get wrong
-about this topic?]
+[that if else and elif are two different thing and sometimes i confuse their purpose]
 
 
 ============================================
