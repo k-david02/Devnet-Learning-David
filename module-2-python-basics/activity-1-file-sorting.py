@@ -6,18 +6,16 @@ Date: [date]
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
+[is sorts images into folder that ONLY accept image file]
 
 
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
+- os module: this is a python module that lets us work with files and folder
+- shutil module: use to copy and move files with os module
+- file path: location of a fike
+- directory: ending of a file name
 (add more as needed)
 
 
@@ -31,15 +29,19 @@ import os
 import shutil
 
 # --- paste your existing code here ---
+older = "my_files"
 
-
+for file in os.listdir(folder):
+    if file.endswith(".jpg"):
+        shutil.move(folder + "/" + file, folder + "/Images/" + file)
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what tripped you up while building this? e.g. a path that didn't
-exist, a file that got overwritten, something that didn't work the
-way you expected at first]
+[One mistake I want to avoid is using the wrong folder name or file
+path. If Python cannot find the folder, the program will give an
+error. I also need to be careful when moving files because I do not
+want to accidentally move the wrong file ]
 
 
 ============================================
